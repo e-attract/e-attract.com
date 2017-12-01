@@ -132,7 +132,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 .section-intro,
 .section-features,
 .section-pricing,
-.section-testimonials,
+.section-founders,
 .section-text,
 .section-signup {
   padding-top: 2.8125rem;
@@ -1178,10 +1178,10 @@ figure { position: relative; }
 
 
 //
-// =Testimonials
+// =Founders
 // --------------------------------------------------
 
-.section-testimonials {
+.section-founders {
   padding-bottom: 3rem;
   background: #663fb5 url(../img/bg-testimonials.jpg) no-repeat center bottom;
   background-size: cover;
