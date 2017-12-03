@@ -14,7 +14,8 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f4f5f7 !default;
 
-$brand-primary:             #6c59b4 !default;
+// $brand-primary:             #6c59b4 !default;
+$brand-primary:             #20AC9F !default;
 $brand-success:             #5cb85c !default;
 $brand-info:                #2b8be3 !default;
 $brand-warning:             #f0ad4e !default;
@@ -125,7 +126,7 @@ $grid-gutter-width:          1.875rem !default; // 30px
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:     "Raleway", sans-serif !default;
+$font-family-sans-serif:     "Helvetica", sans-serif !default;
 $font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:           $font-family-sans-serif !default;
@@ -147,7 +148,7 @@ $font-size-h6:               .875rem !default;
 
 $display1-size:               3.5rem !default;
 $display2-size:               4.5rem !default;
-$display3-size:               5rem !default;
+$display3-size:               3.4rem !default;
 $display4-size:               6rem !default;
 
 $display1-weight:             300 !default;

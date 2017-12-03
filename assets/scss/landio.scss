@@ -33,6 +33,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700|Lato:400,700');
 @import 'icomoon';
+@import "./_custom.scss";
 
 @import "bootstrap/functions";
 @import "bootstrap/variables";
@@ -815,7 +816,18 @@ h2 {
   em { font-weight: 500; }
 }
 
+.a {
+  color: #20AC9F !important;
+}
+
+.btn-theme {
+  color-background: $brand-primary !important;
+  border-color: $brand-primary !important;
+}
+
 .btn {
+  color-background: $brand-primary !important;
+  border-color: $brand-primary !important;
   padding: $input-btn-padding-y ($input-btn-padding-x - 2.25rem) ($input-btn-padding-y - .1rem);
   font-size: .8125rem;
   line-height: 1.1538;
@@ -1180,6 +1192,15 @@ figure { position: relative; }
 //
 // =Founders
 // --------------------------------------------------
+
+.section-founders.partners {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.section-founders.partners .carousel-indicators li.active img {
+  border: 1px dotted #808080 !important;
+}
 
 .section-founders {
   padding-bottom: 3rem;
