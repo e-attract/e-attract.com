@@ -83,3 +83,16 @@ $display3-size: 3.4rem !default;
   }
 }
 
+.subtitle {
+  letter-spacing: 0.3rem;
+}
+
+.sup {
+  position: relative;
+  bottom: 1ex;
+  font-size: 80%;
+}
+
+.brand-color {
+  color: $blue-green;
+}
