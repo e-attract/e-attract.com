@@ -64,3 +64,22 @@ $theme-colors: (
   light: $gray-100,
   dark: $gray-900
 ) !default;
+
+$display3-size: 3.4rem !default;
+
+#brand-logo-img {
+  width: 200px;
+}
+
+@media screen and (min-width: 1000px) {
+  #contact-button {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #brand-logo-img {
+  width: 120px;
+  }
+}
+
