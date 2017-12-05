@@ -1207,7 +1207,11 @@ figure { position: relative; }
 }
 
 .section-founders.partners .carousel-indicators li.active img {
-  border: 1px dotted #808080 !important;
+  border: 3px solid $brand-primary !important;
+}
+
+.section-founders.partners .carousel-indicators li img {
+  border: 2px solid $brand-primary !important;
 }
 
 .section-founders {
