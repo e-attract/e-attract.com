@@ -1,7 +1,6 @@
 (function ($) {
   "use strict";
 
-
   function onScrollAnimations() {
     $('.wp-1').waypoint(function() {
       $('.wp-1').addClass('animated fadeInUp');
@@ -67,46 +66,6 @@
     });
   }
 
-
-  function navSearch() {
-    // hide first nav items when search is opened
-    $('.nav-dropdown-search').on('show.bs.dropdown', function () {
-      $(this).siblings().not('.navbar-nav .dropdown').addClass('sr-only');
-    });
-    // cursor focus
-    $('.nav-dropdown-search').on('shown.bs.dropdown', function () {
-      $('.navbar-search-input').focus();
-    });
-    // show all nav items when search is closed
-    $('.nav-dropdown-search').on('hide.bs.dropdown', function () {
-      $(this).siblings().removeClass('sr-only');
-    });
-  }
-
-
-  function htmlVideo() {
-    videojs("demo_video", {
-      controlBar: {
-        timeDivider: false,
-        fullscreenToggle: false,
-        playToggle: false,
-        remainingTimeDisplay: false
-      },
-      "height": "auto",
-      "width": "auto"
-    }).ready(function() {
-      var myPlayer = this;
-      var aspectRatio = 5 / 12; // aspect ratio 12:5 (video frame 960x400)
-      function resizeVideoJS() {
-          var width = document.getElementById(myPlayer.id()).parentElement.offsetWidth;
-          myPlayer.width(width).height(width * aspectRatio);
-      }
-      resizeVideoJS();
-      window.onresize = resizeVideoJS;
-    });
-  }
-
-
   function scrollToTop() {
     $('.scroll-top').on( 'click', function() {
       $('html, body').animate({
@@ -117,44 +76,10 @@
   }
 
 
-  function videoModal() {
-
-    // VIMEO
-
-    $('#videoModal').on('shown.bs.modal', function () {
-      $("#vimeo-play").vimeo("play");
-    });
-
-    $('#videoModal').on('hidden.bs.modal', function () {
-      $("#vimeo-play").vimeo("pause");
-    });
-
-    // YOUTUBE
-
-    $('#youtube-trigger').click(function () {
-
-      var videoSRC     = $(this).attr("data-video"),
-          videoSRCauto = videoSRC + "?autoplay=1&html5=1&rel=0&showinfo=0";
-
-      $('#youtubeModal').on('shown.bs.modal', function () {
-        $('#youtube-play').attr('src', videoSRCauto);
-      });
-
-      $('#youtubeModal').on('hidden.bs.modal', function () {
-        $('#youtube-play').attr('src', videoSRC);
-      });
-
-    });
-  }
-
-
   function init() {
     onScrollAnimations();
     navMobileCollapse();
-    navSearch();
-    htmlVideo();
     scrollToTop();
-    videoModal();
   }
 
 
