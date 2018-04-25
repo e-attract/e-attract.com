@@ -48,10 +48,12 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-inverse-custom" id="totop">
       <div class="container">
 
-      <a class="navbar-brand" href="#">
-        <img src="assets/img/e_attract_logo_blanc.png" id ="brand-logo-img" class="d-inline-block align-top" alt="Logo e-attract">
-      </a>
+      <div class="d-inline-block align-top"">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/e_attract_logo_blanc.png" id ="brand-logo-img" class="d-inline-block align-top" alt="Logo e-attract">
+        </a>
 
+      </div>
         <div class="hidden-md-up">
           <a class="navbar-toggler collapsed" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
             <div class="sr-only">Activer la navigation mobile</div>
@@ -87,14 +89,30 @@
     <!-- Hero Section
     ================================================== -->
 
-    <header class="jumbotron bg-dark d-md-flex flex-md-column justify-content-md-center align-items-md-center" role="banner">
+    <header class="jumbotron bg-dark d-md-flex flex-md-column justify-content-md-center r" role="banner">
 
-      <div class="text-center">
+      <div class="text-center align-items-md-cente">
         <h1 class="display-3">MEILLEURS CHOIX, MEILLEURES VI(LL)ES.</h1>
         <h2 class="mb-5">Créateur de relations personnalisées entre citoyens & territoires</h2>
       </div>
 
-      <ul class="nav social-share justify-content-center">
+      <style scoped>
+          @media screen and (min-width: 600px) {
+            .on-the-fly {
+              margin-left: 16rem;
+              bottom: 100px;
+              position: absolute;
+              }
+          }
+        .on-the-fly {
+            font-weight: 700;
+            line-height: 20px;
+            background-image:linear-gradient(90deg, rgba(49, 76, 205, 0) 0%, rgba(49, 76, 205, 0.3) 15%, rgba(49, 76, 205, 0) 100%);left:-10%;right:-10%;
+          }
+      </style>
+
+      <a href="https://innovation.engie.com/fr/news/actus/territoires/e-attract--rendre-la-donnee-intelligente-au-service-des-acteurs-du-territoire/9091" class="on-the-fly"> <img style="height: 20px; float: left;" src="assets/img/vivatech_small.png" alt="logo vivatech" class="img-fluid"> <span style="margin-left: 1rem;">Retrouvez-nous à Vivatech, 24-26 Mai à Paris sur le Lab d'Engie > </span></a>
+      <ul class="nav social-share justify-content-center align-items-md-cente">
 <!--         <li class="nav-item"><a class="nav-link" href="#"><span class="icon-twitter"></span></a></li>
  -->        <li class="nav-item"><a class="nav-link" href="https://linkedin.com/company/e-attract"><span class="icon-linkedin"></span></a></li>
       </ul>
