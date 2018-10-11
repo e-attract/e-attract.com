@@ -1,0 +1,16 @@
+.img-bg{
+  position: absolute;
+  top: 261px;
+  width: 70%;
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px){
+  .img-bg{
+    top: 273px;
+  }
+}
+@media screen and (max-width: 990px){
+  .img-bg{
+    top: 353px;
+  }
+}
